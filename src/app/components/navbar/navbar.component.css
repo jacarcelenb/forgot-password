@@ -1,0 +1,43 @@
+.verticalLine {
+    width: 0;
+    border-right: 1px solid #f0efe3;
+    height: calc(4.375rem - 2rem);
+    margin: auto 1rem;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.language-picker {
+    height: 0.6cm;
+    width: 4cm;
+    text-align: center;
+    border: 1px solid #ffff;
+    background-color: #ffff;
+
+}
+
+.language-picker:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.menu-option {
+    background-color:#15283c ;
+    color: #ffff;
+    border:0;
+    margin-left: -35px;
+
+
+}
+.menu-option:hover{
+  background-color:   #057fc0;
+}
+
+.menu-option:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}

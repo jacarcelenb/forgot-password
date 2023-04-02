@@ -1,0 +1,28 @@
+
+
+<div class="letter">
+    <div style="display: block;">
+      <div class="d-inline p-2 text-white"
+        *ngIf="change_language == true && changestyle == false"
+        style="position: relative; left: 35px;">
+        <img src="../../../../assets/images/icons8-usa-48.png" alt="" srcset=""
+        width="30" height="30">
+      </div>
+      <div class="d-inline p-2 text-white"
+        *ngIf="change_language == false && changestyle == false"
+        style="position: relative; left: 25px;">
+        <img src="../../../../assets/images/icons8-ecuador-48.png"  alt="" srcset=""
+        width="30" height="30">
+      </div>
+
+
+      <div class="d-inline p-2 text-white">
+        <select  #sLanguage (change)="selectLanguage($event)" class="language-picker"
+          data-style="btn-primary" [ngClass]="{'menu-option': changestyle == true}">
+          <option value="en-us"> {{ 'LANG_ENGLISH_US' | translate }} </option>
+          <option value="es-ec"> {{ 'LANG_SPANISH_EC' | translate }} </option>
+        </select>
+      </div>
+    </div>
+</div>
+
